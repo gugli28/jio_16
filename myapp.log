@@ -1,0 +1,5 @@
+{"level":"info","message":"Hello distributed log files!","timestamp":"2016-06-20T07:30:02.825Z"}
+{"level":"info","message":"Hello again distributed logs","timestamp":"2016-06-20T07:30:02.830Z"}
+{"level":"debug","message":"Now my debug messages are written to console!","timestamp":"2016-06-20T07:30:02.831Z"}
+INFO:root:Started
+INFO:root:Finished
