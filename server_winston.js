@@ -15,14 +15,14 @@ var logger = new (winston.Logger)({
     //   timestamp: true
     // }) ,
     
-    // new(winston.transports.Logstash)({
-    // 	port: 5002,
-    // 	host: '127.0.0.1'
-    // }),
-    new(winston.transports.Http)({
-    	port: 5003,
+    new(winston.transports.Logstash)({
+    	port: 5002,
     	host: '127.0.0.1'
-    })
+    }),
+    // new(winston.transports.Http)({
+    // 	port: 5003,
+    // 	host: '127.0.0.1'
+    // })
   ]
 })
 
@@ -37,8 +37,8 @@ var logger = new (winston.Logger)({
 ///createserver takes a function which need to be called when a request is made
 
 function onRequest(request,response){
-	console.log(Buffer.byteLength(request, 'utf8'))
-	logger.log('info', request)
+	// console.log(Buffer.byteLength(request, 'utf8'))
+	logger.log('info', 'request')
 	// console.log(logger.log('info', 'request'))
 	console.log('request user has requested ='+request.url);
 	response.writeHead(200,{'Context-Type':'text/plain'});
