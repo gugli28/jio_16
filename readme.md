@@ -13,7 +13,7 @@ In the input section of the conf file, logstash listens to the port mentioned in
 #Running a node file
 `$node file\_name`
  
-#There are 3-4 file which are imp in the long-run
+#Files for ELK demo
 server.js , server\_winston.js , server\_log4js.js , check\_tcp.py 
 
 python code listen whats written on the tcp port.
@@ -23,13 +23,13 @@ these files are config file for logstash, the one which was used for server\_win
 
 #Runnig ELK
 
-##run elastic search
+###run elastic search
 `$/bin/elasticsearch`
 
-##run kibana
+###run kibana
 `$/bin/kibana`
 
-##run logstash
+###run logstash
 `$/bin/logstassh -e ' ' #config format`
 or
 `$/bin/logstash -f filename.config`
